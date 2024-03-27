@@ -425,7 +425,7 @@
 
 
 // 12. Array elementlərini sort metodundan istifadə etmədən artma / azalma istiqamətinə görə sıralayın ----------------------------------
-
+  
 // function artanSirala(array) {
 //   let siralanmisArray = [];
 //   for (let i = 0; i < array.length; i++) {
@@ -797,24 +797,21 @@
 // 10.    Daxil olunmuş ifadənin polindrom olduğunu yoxlayın.   (polindrom dedikdə tərsi və düzü eyni olan ifadə başa düşülür məsələn ütü, 121,1331,4554 və s.)------------------------------
 
 // function polindromYoxla(ifade) {
-//   let temizIfade = ifade.toLowerCase().replace(/\s/g, '');
+//     let temizIfade = ifade.toLowerCase().split('').filter(char => char !== ' ').join('');
   
-//   let tersIfade = temizIfade.split('').reverse().join('');
-
-//   if (temizIfade === tersIfade) {
-//       return true; // Palindromdur
-//   } else {
-//       return false; // Palindrom deyil
+//     let tersIfade = temizIfade.split('').reverse().join('');
+  
+//     return temizIfade === tersIfade;
 //   }
-// }
-
-// let ifade = prompt("Palindrom olup olmadığını yoxlamaq ucun bir ifade girin:");
-
-// if (polindromYoxla(ifade)) {
-//   console.log(ifade + " bir palindromdur.");
-// } else {
-//   console.log(ifade + " bir palindrom deyildir.");
-// }
+  
+//   let ifade = prompt("Palindrom olup olmadığını yoxlamaq üçün bir ifade girin:");
+  
+//   if (polindromYoxla(ifade)) {
+//     console.log(ifade + " bir palindromdur.");
+//   } else {
+//     console.log(ifade + " bir palindrom deyildir.");
+//   }
+  
 
 
 // 11.    Daxil olunmuş iki sözün anaqram olduğunu yoxlayın ( anaqram dedikdə sözlərinin tərkibinin eyni olması başa düşülür, məsələn oslo solo və   s.)------------------------
