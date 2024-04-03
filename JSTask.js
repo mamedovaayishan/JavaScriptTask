@@ -766,7 +766,7 @@
 
 // 8.    Verilmiş array daxilində ixtiyari ədədi ekrana çıxaran proqram tərtib edin-----------------------------------
 
-// function ixciariEdediCixar(array, indeks) {
+// function ixtiyariEdediCixar(array, indeks) {
 //   if (indeks >= 0 && indeks < array.length) {
 //       console.log("İxtiyari ədəd:", array[indeks]);
 //   } else {
@@ -781,6 +781,15 @@
 
 
 // 9.    1-dən 100-ə qədər ədədlər daxilində təkliyi 1 olan ədədləri ekrana verin-------------------------------
+
+// for(var i=0;i<101;i++)
+// {
+//     if(i%10==1)
+//     {
+//         console.log(i)
+//     }
+// }
+//////////////////////////////////////////
 
 // function tekEdedleriCixar() {
 //   console.log("Teklik 1 olan ədədlər:");
@@ -813,6 +822,7 @@
 //   }
   
 
+// i<length/2
 
 // 11.    Daxil olunmuş iki sözün anaqram olduğunu yoxlayın ( anaqram dedikdə sözlərinin tərkibinin eyni olması başa düşülür, məsələn oslo solo və   s.)------------------------
 
@@ -1045,3 +1055,86 @@
 // let numuneMetin = "Bu bir numune metindir.";
 // let altArray = substringYarat(numuneMetin, 3, 10);
 // console.log("Alt Array:", altArray); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// JS TASK 4 
+
+// 1. 2 tarix arasındakı intervalı tapın (iki tarix arasındakı intervalı il ay gün olaraq çıxarmaq, məsələn 27.03.2024 və 01.03.2027 tarixləri üçün aralarındakı interval 2 il 11 ay 2 gün)
+
+// function intervalHesabla(tarix1, tarix2) {
+//     var tarix1Array = tarix1.split('.');
+//     var tarix2Array = tarix2.split('.');
+
+//     var tarix1Date = new Date(tarix1Array[2], tarix1Array[1] - 1, tarix1Array[0]);
+//     var tarix2Date = new Date(tarix2Array[2], tarix2Array[1] - 1, tarix2Array[0]);
+
+//     var fərq = Math.abs(tarix2Date - tarix1Date);
+//     var gün = Math.floor(fərq / (1000 * 60 * 60 * 24));
+//     var il = Math.floor(gün / 365);
+//     var ay = Math.floor((gün % 365) / 30.44); 
+//     gün = gün % 30;
+
+//     return il + " il " + ay + " ay " + gün + " gün";
+// }
+
+// var tarix1 = "27.03.2024";
+// var tarix2 = "01.03.2027";
+// console.log(intervalHesabla(tarix1, tarix2)); // Çıxış: 2 il 11 ay 2 gün
+
+
+
+
+
+// 2. 2 tarix arasındakı gün sayını tapın
+
+// function intervalGunuHesabla(tarix1, tarix2) {
+//     var tarix1Array = tarix1.split('.');
+//     var tarix2Array = tarix2.split('.');
+
+//     var tarix1Date = new Date(tarix1Array[2], tarix1Array[1] - 1, tarix1Array[0]);
+//     var tarix2Date = new Date(tarix2Array[2], tarix2Array[1] - 1, tarix2Array[0]);
+
+//     var fərq = Math.abs(tarix2Date - tarix1Date);
+//     var gün = Math.floor(fərq / (1000 * 60 * 60 * 24));
+
+//     return gün;
+// }
+
+// var tarix1 = "27.03.2024";
+// var tarix2 = "01.03.2027";
+// console.log(intervalGunuHesabla(tarix1, tarix2)); // Çıxış: 1097 gün
+
+
+
+
+
+// 3. Tələbələrin məlumatlarını özündə saxlayan array yaradın. İmtahandan keçməyən tələbələri  silin.(tələbələrin adı, soyadı, imtahana giriş balı, çıxış balı kimi məlumatları saxlayan obyektlər array-in elementləridir. Əgər tələbənin çıxış balı 17-dən kiçik və giriş və  çıxış ballarının cəmi 51-dən kiçikdirsə, həmin tələbəni arraydən silin)
+
+// var telebeler = [
+//     { ad: "Aydan", soyad: "Aliyeva", girisBali: 45, cixisBali: 16 },
+//     { ad: "Arif", soyad: "Qasımov", girisBali: 60, cixisBali: 25 },
+//     { ad: "Elvin", soyad: "Məmmədov", girisBali: 30, cixisBali: 10 },
+// ];
+
+// telebeler = telebeler.filter(function(telebe) {
+//     return !(telebe.cixisBali < 17 && telebe.girisBali + telebe.cixisBali < 51);
+// });
+
+// console.log(telebeler);
